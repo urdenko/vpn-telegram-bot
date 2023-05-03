@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "esModuleInterop":true,
+        "target": "ESNext",
+        "moduleResolution": "Node",
+        "strict": false,
+        "module": "NodeNext",
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+    },
+    "include": ["index.ts"],
+}
