@@ -25,7 +25,7 @@ bot.command('new', (ctx) => {
         return;
     }
 
-    execSync(`sudo bash wireguard.sh <<ANSWERS\n1\n${vpnClientName}\n1\nANSWERS`);
+    execSync(`sudo bash /root/wireguard.sh <<ANSWERS\n1\n${vpnClientName}\n1\nANSWERS`);
     
     ctx.replyWithDocument(Input.fromLocalFile(`/root/${vpnClientName}.conf`))
 });

@@ -4,7 +4,7 @@
  - rent some VDS server
  - install Wireguard server by https://github.com/hwdsl2/wireguard-install
  - install node >= 18
-- download this repo
+- download this repo to folder /root/bot
 - npm i
 - create new file `/lib/systemd/system/vpnbot.service`:
 
@@ -17,8 +17,8 @@ After=network-online.target
 
 [Service]
 Restart=on-failure
-WorkingDirectory=/api/bot/
-ExecStart=npm start
+WorkingDirectory=/root/bot/
+ExecStart=/usr/bin/npm start
 
 [Install]
 WantedBy=multi-user.target
