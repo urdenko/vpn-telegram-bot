@@ -18,13 +18,11 @@
   "homepage": "https://github.com/urdenko/vpn-telegram-bot#readme",
   "devDependencies": {
     "@types/node": "^18.16.3",
-    "@types/sd-notify": "^2.8.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "sd-notify": "^2.8.0",
     "telegraf": "^4.12.2"
   }
 }

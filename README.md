@@ -17,7 +17,6 @@ After=network-online.target
 
 [Service]
 Restart=always
-Type=notify
 WorkingDirectory=/root/bot/
 ExecStart=/snap/bin/npm start
 Environment="BOT_TOKEN=0000000000:AAAAAAAAA"
