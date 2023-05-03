@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 import { Input, Telegraf } from 'telegraf';
 import { execSync } from 'child_process';
+import notify from 'sd-notify';
 
 dotenv.config();
 
@@ -29,6 +30,8 @@ bot.command('new', (ctx) => {
     
     ctx.replyWithDocument(Input.fromLocalFile(`/root/${vpnClientName}.conf`))
 });
+
+notify.ready();
 
 bot.launch();
 

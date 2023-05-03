@@ -16,12 +16,16 @@ Description=VPN Telegram bot
 After=network-online.target
 
 [Service]
-Restart=on-failure
+Restart=always
+Type=notify
 WorkingDirectory=/root/bot/
-ExecStart=/usr/bin/npm start
+ExecStart=/snap/bin/npm start
+Environment="BOT_TOKEN=0000000000:AAAAAAAAA"
+Environment="ALLOWED_CLIENTS=000000,1111111"
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
+RequiredBy=network.target
 ```
 
  - run commands
